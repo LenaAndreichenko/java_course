@@ -5,13 +5,17 @@ public class MyFirstProgram {
     hello("world");
     hello("user");
     hello("Lena");
-    double len = 5;
 
-    System.out.println("Area of square with side - " + len + " = " + area(len));
+    Square s = new Square();
+    s.l = 5;
 
-    double a = 4;
-    double b = 6;
-    System.out.println("Area of rectangle with sides " + a + " and " + b + " = " + area(a, b));
+    System.out.println("Area of square with side - " + s.l + " = " + area(s));
+
+    Rectangle r = new Rectangle();
+
+    r.a = 4;
+    r.b = 6;
+    System.out.println("Area of rectangle with sides " + r.a + " and " + r.b + " = " + area(r));
 
   }
 
@@ -19,11 +23,11 @@ public class MyFirstProgram {
      System.out.println("Hello, " + somebody + "!");
   }
 
-  public static double area (double len) {
-    return len * len;
+  public static double area (Square s) {
+    return s.l * s.l;
   }
 
-  public static double area (double a, double b) {
-    return a * b;
+  public static double area (Rectangle r) {
+    return r.a * r.b;
   }
 }
