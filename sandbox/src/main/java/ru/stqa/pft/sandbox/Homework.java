@@ -9,15 +9,9 @@ public class Homework {
     Point d = new Point(-5, -4);
     Point e = new Point(0, 0);
 
-    System.out.println("d1 = " + distance(a, b));
-    System.out.println("d2 = " + distance(c, d));
-    System.out.println("d3 = " + distance(c, c));
-    System.out.println("d4 = " + distance(c, e));
-  }
-
-  public static double distance(Point a, Point b) {
-    double d = (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
-    double distance = Math.sqrt(d);
-    return distance;
+    System.out.println("d1 = " + Point.distance(a, b));
+    System.out.println("d2 = " + Point.distance(c, d));
+    System.out.println("d3 = " + Point.distance(c, c));
+    System.out.println("d4 = " + Point.distance(c, e));
   }
 }
