@@ -9,9 +9,9 @@ public class Homework {
     Point d = new Point(-5, -4);
     Point e = new Point(0, 0);
 
-    System.out.println("d1 = " + Point.distance(a, b));
-    System.out.println("d2 = " + Point.distance(c, d));
-    System.out.println("d3 = " + Point.distance(c, c));
-    System.out.println("d4 = " + Point.distance(c, e));
+    System.out.println("d1 = " + a.distance(b));
+    System.out.println("d2 = " + c.distance(d));
+    System.out.println("d3 = " + c.distance(c));
+    System.out.println("d4 = " + c.distance(e));
   }
 }

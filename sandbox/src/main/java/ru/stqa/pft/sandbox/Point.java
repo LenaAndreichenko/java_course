@@ -9,8 +9,8 @@ public class Point {
   public int x;
   public int y;
 
-  public static double distance(Point a, Point b) {
-    double d = (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
+  public double distance(Point p) {
+    double d = (x - p.x) * (x - p.x) + (y - p.y) * (y - p.y);
     return Math.sqrt(d);
   }
 }
